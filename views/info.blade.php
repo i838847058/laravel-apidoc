@@ -7,7 +7,7 @@
 @section('content')
     <div class="container">
         <div class="jumbotron" style="background-color: #fff;">
-            <p class="bg-success" style="font-size: 18px;">文档地址：{{ Request::root() }}/doc?name={{ $doc['name'] }}</p>
+{{--            <p class="bg-success" style="font-size: 18px;">文档地址：{{ Request::root() }}/doc?name={{ $doc['name'] }}</p>--}}
             <h2>接口：{{ isset($doc['title']) ? $doc['title'] : '请设置title注释' }}</h2>
             <p>接口地址：{{ isset($doc['url']) ? $doc['url'] : '请设置url注释' }} <span
                         class="label label-success">{{ isset($doc['method']) ? $doc['method'] : 'GET' }}</span></p>
