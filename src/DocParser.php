@@ -1,5 +1,5 @@
 <?php
-namespace Weiwei\LaravelApiDoc;
+namespace Shuxian\LaravelApiDoc;
 
 class DocParser
 {

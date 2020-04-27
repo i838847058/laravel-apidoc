@@ -1,8 +1,8 @@
 <?php
 return [
-    'title' => "APi接口文档",  //文档title
-    'version'=>'1.0.0', //文档版本
-    'copyright'=>'Powered By Zhangweiwei', //版权信息
+    'title' => "APi接口文档",
+    'version'=>'1.0.0',
+    'copyright'=>'Powered By ShuXian',
     'controller' => [
         //需要生成文档的类
     ],

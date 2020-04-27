@@ -1,8 +1,8 @@
 <?php
-namespace Weiwei\LaravelApiDoc\Http\Controllers;
+namespace Shuxian\LaravelApiDoc\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Weiwei\LaravelApiDoc\Doc;
+use Shuxian\LaravelApiDoc\Doc;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Http\Request;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Weiwei\LaravelApiDoc;
+namespace Shuxian\LaravelApiDoc;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
@@ -36,7 +36,7 @@ class ApiDocServiceProvider extends ServiceProvider
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'Weiwei\LaravelApiDoc\Http\Controllers'], function($router)
+        $router->group(['namespace' => 'Shuxian\LaravelApiDoc\Http\Controllers'], function($router)
         {
             require __DIR__.'/Http/routes.php';
         });

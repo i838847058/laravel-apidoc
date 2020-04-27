@@ -1,15 +1,15 @@
-#api-doc
+##Laravel Apidoc
 
 ### 使用方法
 #### 1、安装扩展
 ```bash
-composer require weiwei/laravel-apidoc
+composer require shuxian/laravel-apidoc
 ```
 
 #### 2、注册服务提供者
 
 ```php
-    添加 Weiwei\LaravelApiDoc\ApiDocServiceProvider到config/app.php 的providers 中
+    添加 Shuxian\LaravelApiDoc\ApiDocServiceProvider到config/app.php 的providers 中
 
     如：
     'providers' => [
@@ -17,7 +17,7 @@ composer require weiwei/laravel-apidoc
          * Package Service Providers...
          */
          .......
-        Weiwei\LaravelApiDoc\ApiDocServiceProvider::class,
+        Shuxian\LaravelApiDoc\ApiDocServiceProvider::class,
     ]
 ```
 #### 3、发布前端资源文件
@@ -29,7 +29,7 @@ composer require weiwei/laravel-apidoc
 return [
     'title' => "APi接口文档",  //文档title
     'version'=>'1.0.0', //文档版本
-    'copyright'=>'Powered By Zhangweiwei', //版权信息
+    'copyright'=>'Powered By ShuXian', //版权信息
     'controller' => [
         //需要生成文档的类
 	'App\\Http\\Controllers\\Api\\DemoController'//此控制器demo文件请看下一个步凑中的源码，或者在包根目录下面DemoController.php
@@ -126,10 +126,3 @@ class DemoController extends Controller
 ```
 #### 6、在浏览器访问http://你的域名/doc 查看接口文档
 
-#### 7、预览
-![](https://static.oschina.net/uploads/img/201704/17101409_tAgD.png)
-![](https://static.oschina.net/uploads/img/201704/17101348_XuUz.png)
-![](https://static.oschina.net/uploads/img/201704/17101306_KePe.png)
-
-### 更多支持
-- QQ群663447446
