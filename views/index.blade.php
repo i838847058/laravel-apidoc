@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="zt_content" style="overflow: hidden;">
-            <ul id="apiTab" class="nav nav-tabs">
+            <ul id="apiTab" class="nav nav-tabs" style="padding-top:5px;">
                 <li id="index_tab" class="active"><a href="#index_tab_content" data-toggle="tab">搜索</a></li>
             </ul>
             <div class="tab-content">

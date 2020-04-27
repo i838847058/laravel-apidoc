@@ -7,7 +7,7 @@
 @section('content')
     <div class="container">
         <div class="jumbotron" style="background-color: #fff;">
-{{--            <p class="bg-success" style="font-size: 18px;">文档地址：{{ Request::root() }}/doc?name={{ $doc['name'] }}</p>--}}
+            {{--            <p class="bg-success" style="font-size: 18px;">文档地址：{{ Request::root() }}/doc?name={{ $doc['name'] }}</p>--}}
             <h2>接口：{{ isset($doc['title']) ? $doc['title'] : '请设置title注释' }}</h2>
             <p>接口地址：{{ isset($doc['url']) ? $doc['url'] : '请设置url注释' }} <span
                         class="label label-success">{{ isset($doc['method']) ? $doc['method'] : 'GET' }}</span></p>
@@ -95,11 +95,7 @@
                                         <input class="form-control" type="text" name="url"
                                                value='<?php echo isset($doc["url"]) ? Request::root() . $doc["url"] : "请设置url注释"; ?>'>
                                     </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" id="send" class="btn btn-success btn-block btn-lg"
-                                                autocomplete="off">发送测试
-                                        </button>
-                                    </div>
+                                    <div class="col-sm-2"></div>
                                 </div>
                                 @if(isset($doc['header']) && is_array($doc['header']) && !empty($doc['header']))
                                     @foreach($doc['header'] as $header)
@@ -172,6 +168,16 @@
                                         </div>
                                     @endforeach
                                 @endif
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label"></label>
+                                    <div class="col-sm-7">
+                                        <button type="button" id="send" class="btn btn-success btn-block"
+                                                autocomplete="off">发送测试
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-2"><label class="control-label text-warning"></label>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
