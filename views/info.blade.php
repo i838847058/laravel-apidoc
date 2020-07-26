@@ -232,7 +232,7 @@
             </div>
         </div>
 
-        <p>&copy; {$copyright}
+        <p>&copy; xTeam.io
         <p>
     </div>
     <!-- 模态框（Modal） -->

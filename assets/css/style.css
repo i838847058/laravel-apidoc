@@ -67,14 +67,26 @@ h6 {
     margin: 7px 0;
 }
 
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .zt_header {
     font-family: "Exo", sans-serif;
     color: #fff;
-    background: linear-gradient(-45deg, #23d5ab, #23a6d5, #23d5ab, #62cfd5);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
     height: 60px;
     background-color: #3bcab4;
+    background: linear-gradient(-50deg, #23d5ab, #23a6d5, #23d5ab, #62cfd5);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
     font-size: 30px;
     line-height: 60px;
     padding-left: 20px;
